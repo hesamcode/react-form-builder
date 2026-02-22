@@ -1,16 +1,75 @@
-# React + Vite
+# Form Builder Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Form Builder Pro is a production-ready, schema-driven form builder built with Vite + React + Tailwind CSS v4.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Field palette with click-to-add and drag-to-add for: Text, Email, Number, Textarea, Select, Checkbox, Date.
+- Drag-and-drop field reordering in canvas.
+- Keyboard/mobile reorder fallback via Move Up / Move Down controls.
+- Field settings editor for labels, placeholders, help text, required, default value, and validation rules.
+- Select option management with add/remove/reorder.
+- Preview mode that renders from schema and validates on blur and on submit.
+- Submission success state with pretty-printed JSON.
+- Schema import/export with:
+  - Paste JSON import with friendly validation errors.
+  - Copy JSON to clipboard.
+  - Download `.json` file.
+- Versioned persistence in `localStorage` (`form_builder_pro_v1`) with first-run demo seed.
+- Theme toggle (light/dark), persisted in `localStorage`, implemented via `document.documentElement.classList`.
+- About modal and required author signature/footer.
+- Toast notifications for save/import/export/reset.
+- Loading skeleton during schema import apply.
+- Empty state UI for blank canvas.
+- Reduced-motion support via `prefers-reduced-motion`.
 
-## React Compiler
+## Local Development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Install dependencies:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Run dev server:
+
+```bash
+npm run dev
+```
+
+3. Build production bundle:
+
+```bash
+npm run build
+```
+
+4. Preview production build locally:
+
+```bash
+npm run preview
+```
+
+## GitHub Pages Notes
+
+- This app is fully static and compatible with GitHub Pages.
+- No server/API routes, SSR, or Node-only runtime APIs are used.
+- Vite `base` is configured in `vite.config.js`; deployment under repository subpaths is supported.
+- Router is not used in this project (single-page view switch), so no `HashRouter` setup is required.
+- Assets are not referenced with hardcoded root paths (no `/asset.png` usage).
+
+## QA Checklist
+
+- [ ] App works at 360px width with no horizontal scrolling.
+- [ ] Mobile layout supports collapsible palette/settings drawers.
+- [ ] Desktop layout renders 3-panel builder workspace.
+- [ ] Focus rings are visible on interactive controls.
+- [ ] Modal dialogs support focus trap, ESC close, and focus return.
+- [ ] No console errors during normal flows.
+- [ ] Import invalid JSON shows friendly errors and does not crash.
+- [ ] Export copy/download works.
+- [ ] Preview validates on blur and submit.
+- [ ] `npm run build` completes successfully.
+
+Author
+Hesam Khorshidi
+Portfolio: https://hesamkhorshidi.github.io
