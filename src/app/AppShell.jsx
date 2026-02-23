@@ -292,13 +292,13 @@ export default function AppShell() {
         <footer className="mt-10 pb-6 text-center text-base text-slate-600 dark:text-slate-300">
           Built by{" "}
           <a
-            href="https://hesamkhorshidi.github.io"
+            href="https://hesamcode.github.io"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Visit Hesam Khorshidi portfolio website"
+            aria-label="Visit HesamCode portfolio website"
             className="underline underline-offset-4 hover:opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--color-accent-500)]"
           >
-            Hesam Khorshidi
+            HesamCode
           </a>
         </footer>
       </main>
@@ -426,18 +426,18 @@ export default function AppShell() {
         )}
       >
         <p className="text-sm text-slate-700 dark:text-slate-200">
-          This project was designed and developed by Hesam Khorshidi as part of a professional portfolio demonstrating advanced front-end engineering, product architecture, and UI/UX expertise.
+          This project was designed and developed by HesamCode as part of a professional portfolio demonstrating advanced front-end engineering, product architecture, and UI/UX expertise.
         </p>
         <p className="text-sm text-slate-700 dark:text-slate-200">
           Built by{' '}
           <a
-            href="https://hesamkhorshidi.github.io"
+            href="https://hesamcode.github.io"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Visit Hesam Khorshidi portfolio website"
+            aria-label="Visit HesamCode portfolio website"
             className="underline underline-offset-4 hover:opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--color-accent-500)]"
           >
-            Hesam Khorshidi
+            HesamCode
           </a>
         </p>
       </Modal>

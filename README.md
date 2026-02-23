@@ -71,5 +71,5 @@ npm run preview
 - [ ] `npm run build` completes successfully.
 
 Author
-Hesam Khorshidi
-Portfolio: https://hesamkhorshidi.github.io
+HesamCode
+Portfolio: https://hesamcode.github.io
